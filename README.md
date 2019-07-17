@@ -10,7 +10,6 @@ Add the search terms array.
 Add more more parameters to use in your custom query.
 
     $params = [];
-...
     $string = $data["searchTerm"];
     $params["tables"] = [
         'e' => ["field_1", "field_2", "field_3"],
