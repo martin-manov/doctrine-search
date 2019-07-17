@@ -1,5 +1,5 @@
 # doctrine-search
-A service that build the "where" part of a doctrine query to search for a term in specified tables and columns.
+A service that builds a "where" string for a doctrine query to search for a term in specified tables and columns.
 
 Usage:
 
