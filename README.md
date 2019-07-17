@@ -28,7 +28,7 @@ If so create an instance of the service and call the buildWhere function with th
         ->from("AppBundle:Entity", 'e')
         ->join("e.something", 's');
 
-    if (isset($params["searchTerms"]) && "" != $params["searchTerms"]){
+    if (isset($params["searchTerms"]) && !empty($params["searchTerms"])){
         $queryService = new QueryService();
         $whereStr = $queryService->buildWhere($params);
         $qb->where($whereStr);
